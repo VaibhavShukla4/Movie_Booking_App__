@@ -23,11 +23,11 @@ const Signup = props => {
     };
 
     return (
-        <div className='justify-content-center d-flex align-items-center vh-100'>
-            <div className='bg-white auth-container p-5'>
-                <h1>Register</h1>
-
-                <form onSubmit={handleSubmit}>
+        <div className='Signup justify-content-center d-flex align-items-center vh-100'>
+            <div className=' auth-container p-5'>
+            <h1 className="text-danger mt-4" style={{fontSize:80, fontFamily:"cursive"}}><strong>Theater</strong></h1>
+            <h1 className="text-danger mt-4" style={{fontSize:40, fontFamily:"cursive"}}><>SignUp</></h1>
+               <form onSubmit={handleSubmit}>
                     <div className='input-group'>
                         <input
                             type='text'
@@ -73,7 +73,7 @@ const Signup = props => {
                         />
                     </div>
                     <div className='col d-flex justify-content-center align-items-center'>
-                        <label>User Type: </label>
+                        <label className="text-danger">User Type: </label>
                         <DropdownButton
                             align='end'
                             title={userType}
@@ -96,11 +96,11 @@ const Signup = props => {
                     <div>
                         <input
                             type='submit'
-                            className='form-control m-1 btn btn-primary'
+                            className='form-control btn btn-danger'
                             value='Create'
                         />
                     </div>
-                    <div>
+                    <div className="text-danger">
                         Already have an account?
                         <a href='#' onClick={goToLogin}>
                             Login!

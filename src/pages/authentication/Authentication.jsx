@@ -107,9 +107,9 @@ const Authentication = () => {
     };
 
     return (
-        <div className='main'>
+        <div className='main vh-100'>
             {showSignup ? (
-                <Signup
+                <Signup 
                     onSignupSubmit={handleSignupSubmit}
                     goToLogin={goToLogin}
                     errorMessageSignup={errorMessageSignup}

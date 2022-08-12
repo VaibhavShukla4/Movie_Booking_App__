@@ -18,14 +18,15 @@ const Login = props => {
     };
 
     return (
-        <div className='justify-content-center  d-flex align-items-center vh-100 '>
-            <div className='bg-white auth-container p-5'>
-                <h1>Login</h1>
+        <div className='Login justify-content-center  d-flex align-items-center vh-100 '>
+            <div className=' auth-container p-5'>
+                <h1 className="text-danger mt-4" style={{fontSize:80, fontFamily:"cursive"}}><strong>Theater</strong></h1>
+                <h1 className="text-danger mt-4" style={{fontSize:40, fontFamily:"cursive"}}><>Login</></h1>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} >
                     <div className='input-group'>
                         <input
-                            className='form-control m-1'
+                            className='form-control m-1 login_Id'
                             type='text'
                             placeholder='Enter User Id'
                             value={userId}
@@ -49,10 +50,10 @@ const Login = props => {
                         <input
                             type='submit'
                             value='Log in'
-                            className='form-control m-1 btn btn-primary'
+                            className='form-control m-1 btn btn-danger'
                         />
                     </div>
-                    <div className='input-group'>
+                    <div className='input-group text-danger mx-2'>
                         Don't have an account?
                         <a href='#' onClick={goToSignup}>
                             Sign up!

@@ -20,3 +20,9 @@ const Admin = () => {
     );
 };
 export default Admin;
+
+/**
+ * 
+ *  Welcome1
+or Welcome#1 :password
+ */

@@ -9,9 +9,10 @@ const ImageCarousel = props => {
             <CCarousel controls indicators>
                 {images.map((image, index) => {
                     return (
-                        <CCarouselItem>
+                        <CCarouselItem key={index}>
                             <CImage
-                                className='d-block w-100'
+                                className='d-block '
+                                style={{height:"30%",width:"100%"}}
                                 src={image}
                                 alt={`slide ${index + 1}`}
                             />
